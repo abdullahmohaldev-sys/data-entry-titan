@@ -5,14 +5,14 @@ import io
 # Page Configuration for Premium SaaS Look
 st.set_page_config(page_title="Data Entry Titan Pro v3.0", page_icon="👑", layout="wide")
 
-# Custom CSS for Professional Styling
-st.markdown("""
+# Custom CSS using modern st.html for Professional Styling (Bug Fixed)
+st.html("""
     <style>
     .main-title { font-size: 38px; font-weight: bold; color: #1E3A8A; margin-bottom: 5px; }
     .sub-title { font-size: 16px; color: #4B5563; margin-bottom: 25px; }
     .metric-box { padding: 15px; background-color: #F3F4F6; border-radius: 8px; border-left: 5px solid #2563EB; }
     </style>
-""", unsafe_html=True)
+""")
 
 st.markdown('<div class="main-title">👑 Data Entry Titan Pro v3.0</div>', unsafe_html=True)
 st.markdown('<div class="sub-title">The All-In-One Data Wizard: Clean, Standardize, Filter, and Separate Anomalies in Seconds.</div>', unsafe_html=True)
